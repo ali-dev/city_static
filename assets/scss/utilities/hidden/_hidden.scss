@@ -1,0 +1,19 @@
+
+/* ---------------------------------------------------------------------
+ Hidden Element. Will not be seen nor heard.
+------------------------------------------------------------------------ */
+
+.isHidden,
+.isHidden_mobile {
+    display: none;
+}
+
+@media ($DESKTOP) {
+    .isHidden_mobile {
+	    display: inherit;
+    }
+
+    .isHidden_desktop {
+        display: none;
+    }
+}

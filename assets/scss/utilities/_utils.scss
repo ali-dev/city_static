@@ -1,0 +1,26 @@
+
+/* ---------------------------------------------------------------------
+ Utility Styles. Use wisely and sparingly.
+------------------------------------------------------------------------ */
+
+.noSelect {
+    cursor: default;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+// Place for Mix-in Utility Classes
+// .mix-layoutIsRight {
+//     text-align: right;
+// }
+
+.img {
+    display: block;
+    width: 100%;
+    height: auto;
+}

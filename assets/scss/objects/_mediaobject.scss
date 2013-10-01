@@ -1,0 +1,35 @@
+
+/* ---------------------------------------------------------------------
+ Media Object
+------------------------------------------------------------------------ */
+
+.media { 
+    overflow: hidden;
+}
+
+.media_overflow {
+    overflow: visible;
+}
+
+.media-media {
+    margin-bottom: 20px;
+}
+
+.media-media img {
+    display: block;
+}
+
+.media-bd {
+    overflow: hidden;
+}
+
+@media ($TABLET) {
+
+    .media-media {
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+}
+

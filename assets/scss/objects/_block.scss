@@ -1,0 +1,36 @@
+
+/* ---------------------------------------------------------------------
+ Blocks Layout Styles
+------------------------------------------------------------------------ */
+
+.blocks {
+    list-style: none;
+    overflow: hidden;
+    position: relative;
+    margin-left: -2%;
+}
+
+.blocks > * {
+    float: left;
+    margin-left: 2%;
+}
+
+.blocks_2up > * { width: 48%; }
+.blocks_3up > * { width: 31.3333333333%; }
+.blocks_4up > * { width: 23%; }
+.blocks_5up > * { width: 18%; }
+
+
+.blocks_flush {
+    margin-left: 0;
+}
+
+.blocks_flush > * {
+    float: left;
+    margin-left: 0;
+}
+
+.blocks_flush.blocks_2up > * { width: 50%; }
+.blocks_flush.blocks_3up > * { width: 33.3333333333%; }
+.blocks_flush.blocks_4up > * { width: 25%; }
+.blocks_flush.blocks_5up > * { width: 20%; }

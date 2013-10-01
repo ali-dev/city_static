@@ -1,0 +1,25 @@
+
+/* ---------------------------------------------------------------------
+ Global Page Wrap Styles
+------------------------------------------------------------------------ */
+
+.wrapper {
+    margin: 0 auto;
+    max-width: $GLOBAL_WRAP_WIDTH;
+    padding: 0 2%;
+}
+
+.wrapperFlush {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.wrapper_full {
+    max-width: 100%;
+}
+
+@media ($TABLET_PORTRAIT) {
+    .wrapper {
+        padding: 0 $GLOBAL_PADDING;
+    }
+}

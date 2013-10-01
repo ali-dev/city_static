@@ -1,0 +1,66 @@
+
+/* ---------------------------------------------------------------------
+ Base Global Styles
+------------------------------------------------------------------------ */
+
+html,
+body {
+    height: 100%;
+}
+
+/**
+ * Standardize the baseline font
+ *
+ * 1. Using interpolation to fix the time where sass gets the `/` wrong and acts as division
+ */
+html,
+body,
+input,
+button,
+select,
+textarea {
+    
+    font-family: $SANS_SERIF;
+    font-weight: $FONT_MED;
+    font-size: 12px;
+    color: $OFF_BLACK;
+}
+
+body {
+    background-color: $OFFWHITE_BLUE;
+}
+
+a {
+    color: $TEAL;
+    text-decoration: none;
+    @include transition(all 0.2s ease-in);
+}
+
+a[href="#"] {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    /* @include user-select(none); */
+}
+
+a:hover {
+    color: $RED;
+    cursor: pointer;
+}
+
+a:active {
+    /* color: $GREY_DARKER; */
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.2857;
+}
+
+audio {
+    width: 100%;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}

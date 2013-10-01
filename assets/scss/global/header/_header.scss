@@ -1,0 +1,252 @@
+
+/* ---------------------------------------------------------------------
+ Global Header Styles
+------------------------------------------------------------------------ */
+
+.globalHeader {
+    overflow: hidden;
+    display: block;
+    width: 100%;
+}
+
+.globalHeader-util {
+    display: table;
+    width:  100%;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.globalHeader-util > * {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.globalLogo {
+    display: block;
+    height: 80px;
+    width: 180px;
+    text-indent: -9999px;
+    margin: 10px;
+    background: url(../images/svgs/city-logo.svg) 0 0 no-repeat;
+    background-size: 100%;
+}
+
+.globalUtil {
+    text-align: right;
+}
+
+.globalUtil-bd {
+    display: block;
+}
+
+.globalUtil-bd > a + a {
+    margin-left: 15px;
+}
+
+.globalUtil-ft {
+    margin-top: 30px;
+}
+
+.globalHeader-nav {
+    border-top: 7px solid $RED;
+}
+
+.globalNav {
+    display: block;
+    background-color: $BLUE_DARK;
+    border-top: 1px solid $GOLD_ALT;
+    border-bottom: 1px solid $GOLD;
+}
+
+.globalNav-nav {
+    display: inline-block;
+    font-size: 0;
+    /* removing extra px from using inline-block */
+}
+
+.globalNav-nav > * {
+    font-size: 12px; 
+    // font-size: 14px;
+    font-weight: $FONT_BOLD;
+    text-transform: uppercase;
+    color: $WHITE;
+    display: inline-block;
+    padding: 8px 18px;
+    border-right: 1px solid $GREY_DARKER;
+}
+
+.globalNav > * > *:first-child {
+    width: 65%;
+}
+
+.globalNav-nav > * a {
+    color: $WHITE;
+}
+
+.globalNav-nav > *:hover {
+    cursor: pointer;
+}
+
+.globalNav-nav > *:hover > a {
+    color: $GOLD;
+}
+
+.globalNav-nav > *:first-child {
+    padding-left: 0;
+}
+
+.globalNav-search {
+    display: table;
+    width: 100%;
+    min-height: 30px;
+}
+
+.globalNav-search > * {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.globalSearch {
+    // display: inline-block;
+}
+
+.globalSearch-label {
+    position: relative;
+    font-weight: $FONT_EXTRABOLD;
+    font-size: 12px;
+    color: $GOLD;
+    text-transform: uppercase;
+    padding-right: 14px;
+}
+
+.globalSearch-label:after {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: -32px;
+    font-size: 24px;
+    @extend .icon;
+    @extend .icon-search:before;
+    color: $GREY_DARKER;
+}
+
+.globalSearch-input {
+    min-height: 30px;
+    font-size: 12px;
+    border: none;
+    margin: 0;
+    padding: 0 10px 0 37px;
+    background-color: $BLUE_DARK_ALT;
+    color: $GREY_DARK;
+    border-left: 1px solid $GREY_DARKER;
+}
+
+.globalSearch-input:focus {
+    background-color: $OFF_BLACK;
+}
+
+.advSearchBtn {
+    width: 35%;
+    font-size: 12px;
+    text-align: left;
+    color: $GREY_DARK;
+    background-color: $OFF_BLACK;
+    padding: 0 10px;
+    border-left: 1px solid $GREY_DARKER;
+    border-right: 1px solid $GREY_DARKER;
+    @include transition(all 0.2s ease-in);
+}
+
+.advSearchBtn:after {
+    content: '';
+    position: relative;
+    right: -7px;
+    top: -10px;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid $TEAL;
+}
+
+.advSearchBtn:hover {
+    cursor: pointer;
+    background-color: $BLACK;
+}
+
+.sortBox {
+    display: inline-block;
+    overflow: hidden;
+    padding: 8px;
+    border: 1px solid $GREY_DARK;
+    border-top: none;
+}
+
+.sortBox-label {
+    font-weight: $FONT_BOLD;
+    font-size: 13px;
+    text-transform: uppercase;
+    float: left;
+    color: $GOLD;
+}
+
+.sortBox-list {
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.sortBox-list > * {
+    float: left;
+    margin-left: 8px;
+    font-weight: $FONT_SEMIBOLD;
+}
+
+.sortBox-list > * > a {
+    color: $GREY_DARKER;
+}
+
+.sortBox-list > * > a:hover,
+.sortBox-list > *.isActive > a,
+.sortBox-list > * > a:active {
+    color: $TEAL;
+}
+
+.sortBox-list > * + *:before {
+    content: '-';
+    margin-right: 8px;
+    color: $OFF_BLACK;
+}
+
+@media ($DESKTOP_PLUS) {
+    .globalNav > * > *:first-child {
+        width: 62%;
+    }
+    .globalSearch-input {
+        min-width: 55%;
+    }
+    .advSearchBtn {
+        width: 30%;
+    }
+}
+
+@media (min-width: 1150px) {
+    .globalNav-nav > * {
+        font-size: 14px;
+    }
+    .globalSearch-label {
+        font-size: 14px;
+    }
+}
+
+@media ($DESKTOP) {
+    .globalSearch-input {
+        min-width: 44%;
+    }
+}
+
+@media ($TABLET_PORTRAIT) {
+    .globalHeader-util {
+        max-width: $GLOBAL_WRAP_WIDTH;
+        padding: 0 $GLOBAL_PADDING;
+    }
+}

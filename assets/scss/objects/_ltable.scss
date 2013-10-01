@@ -1,0 +1,25 @@
+
+
+/* ---------------------------------------------------------------------
+ lTable Styles: Table Layout styles for elements that need to layout horizontally,
+ vertically align, and fill the container based on number of
+ elements contained within.
+------------------------------------------------------------------------ */
+
+.lTable {
+    display: table;
+    width: 100%;
+}
+
+.lTable > * {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.lTable_2up > * {
+    width: 50%;
+}
+
+.mix-lTable_isRight {
+    text-align: right;
+}

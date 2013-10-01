@@ -1,0 +1,116 @@
+/* ---------------------------------------------------------------------
+ Grid Styles
+------------------------------------------------------------------------ */
+
+.grid {
+    overflow: hidden;
+}
+
+.grid:before,
+.grid:after {
+    content: " ";
+    display: table;
+    box-sizing: border-box;
+}
+
+.grid:after {
+    clear: both;
+}
+
+.grid_overflow:after { 
+    content: "."; 
+    visibility: hidden; 
+    display: block; 
+    height: 0; 
+    clear: both;
+}
+
+.grid {
+    display: block;
+}
+
+.grid-col {
+    width: 100%;
+}
+
+@media ($TABLET_PORTRAIT) {
+
+  /*****************************
+      CUTTER GRID Styles
+  *****************************/
+
+    .grid-col {
+        float: left;
+    }
+
+    .grid-col + .grid-col {
+        margin-left: 1.61291%;
+    }
+
+    .grid-col_1     { width: 8.548%; }
+    .grid-col_2     { width: 18.709%; }
+    .grid-col_3     { width: 28.87%; }
+    .grid-col_4     { width: 39.032%; }
+    .grid-col_5     { width: 49.193%; }
+    .grid-col_6     { width: 59.354%; }
+    .grid-col_7     { width: 69.516%; }
+    .grid-col_8     { width: 79.677%; }
+    .grid-col_9     { width: 88.838%; }
+    .grid-col_10    { width: 100%; }
+
+    .grid-col.grid-col_push1:first-child    { margin-left: 10.16091%; }
+    .grid-col.grid-col_push1                { margin-left: 11.77382%; }
+
+    .grid-col.grid-col_push2:first-child    { margin-left: 20.32191%; }
+    .grid-col.grid-col_push2                { margin-left: 21.93482%; }
+
+    .grid-col.grid-col_push3:first-child    { margin-left: 30.48291%; }
+    .grid-col.grid-col_push3                { margin-left: 32.09582%; }
+
+    .grid-col.grid-col_push4:first-child    { margin-left: 40.64491%; }
+    .grid-col.grid-col_push4                { margin-left: 42.25782%; }
+
+    .grid-col.grid-col_push5:first-child    { margin-left: 50.80591%; }
+    .grid-col.grid-col_push5                { margin-left: 52.41882%; }
+
+    .grid-col.grid-col_push6:first-child    { margin-left: 60.96691%; }
+    .grid-col.grid-col_push6                { margin-left: 62.57982%; }
+
+    .grid-col.grid-col_push7:first-child    { margin-left: 71.12891%; }
+    .grid-col.grid-col_push7                { margin-left: 72.74182%; }
+
+    .grid-col.grid-col_push8:first-child    { margin-left: 81.28991%; }
+    .grid-col.grid-col_push8                { margin-left: 82.90282%; }
+
+    .grid-col.grid-col_push9                { margin-left: 91.45082%; }
+
+    /*****************************
+      FLUSH GRID Styles
+    *****************************/
+
+    .grid_flush > .grid-col + .grid-col {
+        margin-left: 0;
+    }
+
+    .grid_flush .grid-col_1     { width: 10%; }
+    .grid_flush .grid-col_2     { width: 20%; }
+    .grid_flush .grid-col_3     { width: 30%; }
+    .grid_flush .grid-col_4     { width: 40%; }
+    .grid_flush .grid-col_5     { width: 50%; }
+    .grid_flush .grid-col_6     { width: 60%; }
+    .grid_flush .grid-col_7     { width: 70%; }
+    .grid_flush .grid-col_8     { width: 80%; }
+    .grid_flush .grid-col_9     { width: 90%; }
+    .grid_flush .grid-col_10    { width: 100%; }
+
+    .grid_flush .grid-col.grid-col_push1    { margin-left: 10%; }
+    .grid_flush .grid-col.grid-col_push2    { margin-left: 20%; }
+    .grid_flush .grid-col.grid-col_push3    { margin-left: 30%; }
+    .grid_flush .grid-col.grid-col_push4    { margin-left: 40%; }
+    .grid_flush .grid-col.grid-col_push5    { margin-left: 50%; }
+    .grid_flush .grid-col.grid-col_push6    { margin-left: 60%; }
+    .grid_flush .grid-col.grid-col_push7    { margin-left: 70%; }
+    .grid_flush .grid-col.grid-col_push8    { margin-left: 80%; }
+    .grid_flush .grid-col.grid-col_push9    { margin-left: 90%; }
+
+}

@@ -1,0 +1,15 @@
+
+/* ---------------------------------------------------------------------
+ Web Fonts.
+------------------------------------------------------------------------ */
+
+@font-face {
+    font-family: 'fontAwesomeIcons';
+    src: url('../fonts/fontawesome-webfont.eot');
+    src: url('../fonts/fontawesome-webfont?#iefix') format('embedded-opentype'),
+         url('../fonts/fontawesome-webfont.woff') format('woff'),
+         url('../fonts/fontawesome-webfont.ttf') format('truetype'),
+         url('../fonts/fontawesome-webfont.svg#fontAwesomeIcons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

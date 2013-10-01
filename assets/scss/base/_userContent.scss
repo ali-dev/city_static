@@ -1,0 +1,411 @@
+
+/* ---------------------------------------------------------------------
+ User Content Styles. WYSIWYG
+------------------------------------------------------------------------ */
+
+.userContent {
+    font: normal 14px/1.4 Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #333333;
+}
+
+/* ---------------------------------------------------------------------
+user-content paragraphs
+------------------------------------------------------------------------ */
+.userContent p {
+    margin: 0 0 12px 0;
+}
+
+.userContent p:first-of-type {
+    font-size: 18px;
+}
+
+/* ---------------------------------------------------------------------
+user-content headings
+------------------------------------------------------------------------ */
+.userContent h1 {
+    font-size: 24px;
+    line-height: 1;
+    font-weight: bold;
+    color: #0066ff;
+    margin: 0 0 12px 0;
+}
+
+.userContent h2 {
+    font-size: 21px;
+    line-height: 1;
+    font-weight: bold;
+    color: #0066ff;
+    margin: 0 0 12px 0;
+}
+
+.userContent h3 {
+    font-size: 18px;
+    line-height: 1;
+    font-weight: bold;
+    color: #0066ff;
+    margin: 0 0 12px 0;
+}
+
+.userContent h4 {
+    font-size: 16px;
+    line-height: 1;
+    font-weight: bold;
+    color: #0066ff;
+    margin: 0 0 12px 0;
+}
+
+.userContent h5 {
+    font-size: 14px;
+    line-height: 1;
+    font-weight: bold;
+    color: #0066ff;
+    margin: 0 0 12px 0;
+}
+
+.userContent h6 {
+    font-size: 12px;
+    line-height: 1;
+    font-weight: bold;
+    color: #0066ff;
+    margin: 0 0 12px 0;
+}
+
+/* ---------------------------------------------------------------------
+user-content sections
+------------------------------------------------------------------------ */
+.userContent blockquote {
+    margin: 0 24px 12px 24px;
+    padding: 12px;
+    background: #eeeeee;
+    font-style: italic;
+}
+
+.userContent address {
+    margin: 0 0 12px 0;
+    font-style: italic;
+}
+
+/* ---------------------------------------------------------------------
+user-content anchors
+------------------------------------------------------------------------ */
+.userContent a:link {
+    color: #0066ff;
+}
+
+.userContent a:visited {
+}
+
+.userContent a:focus,
+.userContent a:hover {
+    color: #0066aa;
+}
+
+.userContent a:active {
+
+}
+
+/* ---------------------------------------------------------------------
+user-content text formatting
+------------------------------------------------------------------------ */
+.userContent strong,
+.userContent b {
+    font-weight: bold;
+}
+
+.userContent em,
+.userContent i {
+    font-style: italic;
+}
+
+.userContent del,
+.userContent strike,
+.userContent s {
+    text-decoration: line-through;
+}
+
+.userContent u,
+.userContent ins {
+    text-decoration: underline;
+}
+
+.userContent sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+.userContent sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+
+.userContent big {
+    font-size: larger;
+}
+
+.userContent small {
+    font-size: smaller;
+}
+
+.userContent abbr,
+.userContent acronym {
+    border-bottom: dotted 1px;
+}
+
+.userContent cite,
+.userContent dfn {
+    font-style: italic;
+}
+
+.userContent q {
+    font-style: italic;
+}
+
+.userContent q::before {
+    content: open-quote;
+}
+
+.userContent q::after  {
+    content: close-quote;
+}
+
+.userContent q:lang(en) {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+.userContent bdo {
+    direction: rtl;
+}
+
+.userContent blink {
+    text-decoration: blink;
+}
+
+/* ---------------------------------------------------------------------
+user-content computer output
+------------------------------------------------------------------------ */
+.userContent pre {
+    margin: 0 0 12px 0;
+    font-family: "Lucida Console", Monaco, monospace;
+    white-space: normal;
+}
+
+.userContent code,
+.userContent samp,
+.userContent tt,
+.userContent kbd {
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+.userContent var {
+    font-style: italic;
+}
+
+/* ---------------------------------------------------------------------
+user-content lists
+------------------------------------------------------------------------ */
+.userContent ul,
+.userContent ol,
+.userContent dl {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.userContent ul {
+    list-style-type: disc;
+    margin: 0 0 12px 0;
+}
+
+.userContent ol {
+    list-style-type: decimal;
+    margin: 0 0 12px 0;
+}
+
+.userContent dt {
+    font-weight: bold;
+}
+
+.userContent li,
+.userContent dd {
+    margin: 0 0 0 24px;
+}
+
+/* nested lists have no top/bottom margins */
+.userContent ul ul,
+.userContent ul ol,
+.userContent ul dl,
+.userContent ol ul,
+.userContent ol ol,
+.userContent ol dl,
+.userContent dl ul,
+.userContent dl ol,
+.userContent dl dl {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* 2 deep unordered lists use a circle */
+.userContent ol ul,
+.userContent ul ul {
+    list-style-type: circle;
+}
+
+/* 3 deep (or more) unordered lists use a square */
+.userContent ol ol ul,
+.userContent ol ul ul,
+.userContent ul ol ul,
+.userContent ul ul ul {
+    list-style-type: square;
+}
+
+/* ---------------------------------------------------------------------
+user-content tables
+------------------------------------------------------------------------ */
+.userContent table {
+    margin: 0 0 20px 0;
+    width: 100% !important;
+    border-spacing: 2px;
+    border-collapse: separate;
+}
+
+.userContent colgroup {
+
+}
+
+.userContent col {
+
+}
+
+.userContent caption {
+    font-size: smaller;
+}
+
+.userContent tr {
+    vertical-align: middle;
+}
+
+.userContent tbody {
+    vertical-align: middle;
+}
+
+.userContent thead {
+    vertical-align: middle;
+}
+
+.userContent tfoot {
+    vertical-align: middle;
+}
+
+.userContent td {
+    vertical-align: inherit;
+    text-align: inherit;
+    padding: 2px 4px;
+}
+
+.userContent th {
+    vertical-align: inherit;
+    text-align: inherit;
+    font-weight: bold;
+    padding: 2px 4px;
+    background-color: #666666;
+    color: #ffffff;
+}
+
+.userContent tr:nth-child(even) td {
+    background-color: #cccccc;
+}
+
+/* ---------------------------------------------------------------------
+user-content horizontal rule
+------------------------------------------------------------------------ */
+.userContent hr {
+    margin: 0 0 12px 0;
+    background: #666666;
+    color: #666666;
+    height: 1px;
+    border: none;
+    line-height: 1px;
+    font-size: 1px;
+}
+
+/* ---------------------------------------------------------------------
+user-content media
+------------------------------------------------------------------------ */
+.userContent img,
+.userContent video,
+.userContent audio {
+    max-width: 100% !important;
+}
+
+/* ---------------------------------------------------------------------
+user-content undefined elements
+------------------------------------------------------------------------ */
+.userContent html,
+.userContent head,
+.userContent body,
+.userContent title,
+.userContent meta,
+.userContent link,
+.userContent style,
+.userContent script,
+.userContent noscript,
+.userContent base,
+.userContent basefont,
+.userContent div,
+.userContent span,
+.userContent header,
+.userContent hgroup,
+.userContent footer,
+.userContent main,
+.userContent section,
+.userContent article,
+.userContent aside,
+.userContent nav,
+.userContent figcaption,
+.userContent figure,
+.userContent menu,
+.userContent command,
+.userContent summary,
+.userContent details,
+.userContent canvas
+.userContent applet,
+.userContent object,
+.userContent embed,
+.userContent source,
+.userContent param,
+.userContent track,
+.userContent map,
+.userContent area
+.userContent iframe,
+.userContent frame,
+.userContent frameset,
+.userContent noframes,
+.userContent fieldset,
+.userContent legend,
+.userContent form,
+.userContent label,
+.userContent isindex,
+.userContent input,
+.userContent select,
+.userContent option,
+.userContent optgroup,
+.userContent textarea,
+.userContent button,
+.userContent datalist,
+.userContent meter,
+.userContent progress,
+.userContent output,
+.userContent keygen,
+.userContent ruby,
+.userContent rt,
+.userContent rp,
+.userContent mark,
+.userContent time,
+.userContent wbr,
+.userContent br,
+.userContent dir,
+.userContent font,
+.userContent center {
+    /* nil */
+}

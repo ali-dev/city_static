@@ -1,0 +1,50 @@
+
+/* ---------------------------------------------------------------------
+ Link and Button Styles
+------------------------------------------------------------------------ */
+
+.link {
+    font-size: 12px;
+    text-decoration: underline;
+    display: inline-block;
+}
+
+.link_cta:after {
+    content: ' >>';
+}
+
+.link_alt {
+    text-decoration: none;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    font-weight: $FONT_EXTRABOLD;
+    font-size: 14px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+    color: $WHITE;
+    padding: 10px;
+    min-width: 80px;
+    background-color: $RED;
+    @include box-shadow(4px 4px 0px $GREY_LIGHT);
+    margin: 0 4px 0 -3px;
+}
+
+.btn:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -4px;
+    height: 4px;
+    width: 4px;
+    background-color: $GREY_LIGHT;
+}
+
+.btn:hover {
+    color: $WHITE;
+    background-color: $BRAND_ALT;
+}

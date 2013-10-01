@@ -1,0 +1,73 @@
+
+// ---------------------------------------------------------------------
+// Font family declarations
+// ------------------------------------------------------------------------
+$FONT_ICONS: 'fontAwesomeIcons';
+$SANS_SERIF: 'Raleway', Arial, Helvetica, sans-serif;
+
+
+$FONT_MED: 300;
+$FONT_SEMIBOLD: 500;
+$FONT_BOLD: 600;
+$FONT_EXTRABOLD: 800;
+
+// ---------------------------------------------------------------------
+// Font sizing/ line heights
+// ------------------------------------------------------------------------
+
+$BASE_FONT_SIZE: 11px;
+$BASE_LINE_HEIGHT: 1.3;
+
+
+// ---------------------------------------------------------------------
+// Colors
+// Colors sorted by greyscale followed by roygbiv
+// ------------------------------------------------------------------------
+
+$GREY_LIGHTER: #fafafa;
+$GREY_LIGHT: #e6e4e4;
+$GREY: #bac3cc;
+$GREY_DARK: #b3b3b2;
+$GREY_DARKER: #929292;
+$GREY_ULTRADARK: #33383d;
+$BLACK: #000000;
+$OFF_BLACK: #3a4147;
+$WHITE: #ffffff;
+
+$BRAND: #f1b45f;
+$BRAND_ALT: #581802;
+$BLUE: #5f99f1;
+$BLUE_DARK: #0f3357;
+$BLUE_DARK_ALT: #1c3c5d;
+$BLUE_GREY: #b3b3b2;
+$OFFWHITE_BLUE: #f8f8ff;
+$RED: #d43232;
+$RED_ORANGE: #d14836;
+$GOLD: #f6b322;
+$GOLD_ALT: #a6895c;
+$GREEN: #188f5b;
+$TEAL: #0c96a5;
+$TEAL_DARK: #548f96;
+
+
+// ---------------------------------------------------------------------
+// Breakpoints
+// Variable defining the resolution of the breakpoint(s)
+// ------------------------------------------------------------------------
+
+$DESKTOP_PLUS: "min-width: 1280px";
+$DESKTOP: "min-width: 1025px";
+$TABLET: "min-width: 800px";
+$TABLET_PORTRAIT: "min-width: 580px";
+$PHONE_LANDSCAPE: "min-width: 420px";
+
+// ---------------------------------------------------------------------
+// Global Utilites
+// Variable defining global measurments for general layout.
+// ------------------------------------------------------------------------
+
+$GLOBAL_WRAP_WIDTH: 1240px;
+$GLOBAL_PADDING: 20px;
+
+
+

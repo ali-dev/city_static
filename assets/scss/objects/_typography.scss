@@ -1,0 +1,91 @@
+
+/* ---------------------------------------------------------------------
+ Typography Styles
+------------------------------------------------------------------------ */
+
+
+/* ---------------------------------------------------------------------
+ Typography: Heading and Body text Styles
+------------------------------------------------------------------------ */
+
+/* Heading Styles */
+.hdg {
+    display: block;
+    font-weight: $FONT_SEMIBOLD;
+    color: $OFF_BLACK;
+    padding-bottom: 3px;
+}
+
+.hdg + .hdg,
+.hdg + .bdcpy,
+.bdcpy + .hdg,
+.bdcpy + .bdcpy {
+    margin-top: 10px;
+}
+
+.hdg_1 {
+    font-size: 36px;
+    line-height: 1;
+}
+
+.hdg_2 {
+    font-size: 24px;
+    line-height: 0.8571;
+}
+
+.hdg_3 {
+    font-size: 17px;
+    line-height: 1.0588;
+}
+
+.hdg_4 {
+    font-size: 14px;
+    line-height: 1.2857;
+}
+
+.hdg_5 {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+
+/* Body Copy Styles */
+
+.bdcpy {
+    display: block;
+    font-weight: $FONT_MED;
+    color: $BLACK;
+    letter-spacing: 0.1em;
+}
+
+.bdcpy_xlg {
+    font-size: 14px;
+    line-height: 1.8571;
+}
+
+.bdcpy_lg {
+    font-size: 12px;
+    line-height: 1.6667;
+}
+
+.bdcpy_md {
+    font-size: 11px;
+    line-height: 1.4545;
+}
+
+.bdcpy_sm {
+    font-size: 10px;
+    line-height: 1.4;
+}
+
+/* Heading and Body Copy Text mixins */
+.mix-txt_thick		{ font-weight: $FONT_EXTRABOLD; }
+.mix-txt_bold       { font-weight: $FONT_BOLD; }
+.mix-txt_reg        { font-weight: $FONT_SEMIBOLD; }
+.mix-txt_thin       { font-weight: $FONT_MED; }
+.mix-txt_caps       { text-transform: uppercase; }
+
+.mix-txt_brand      { color: $BRAND; }
+.mix-txt_brandAlt   { color: $BRAND_ALT; }
+

@@ -1,0 +1,77 @@
+@mixin box-shadow($shadow) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+
+// 1. Using interpolation to correct the time sass gets the `/` wrong when using border-radius' slash syntax
+ 
+@mixin border-radius($radius) {
+    -webkit-border-radius: #{$radius}; /* 1 */
+    -moz-border-radius: #{$radius}; /* 1 */
+    border-radius: #{$radius}; /* 1 */
+}
+
+@mixin box-sizing($box-model) {
+    -webkit-box-sizing: $box-model;
+    -moz-box-sizing: $box-model;
+    box-sizing: $box-model;
+}
+
+@mixin backface-visibility($visibility) {
+    -webkit-backface-visibility: $visibility;
+    -moz-backface-visibility: $visibility;
+    -o-backface-visibility: $visibility;
+    backface-visibility: $visibility;
+}
+
+@mixin user-select($value) {
+    -webkit-user-select: $value;
+    -moz-user-select: $value;
+    -ms-user-select: $value;
+    user-select: $value;
+}
+
+@mixin gradient-vertical($color-start: #555, $start: 0%, $color-end: #333, $stop: 100%) {
+    background-color: $color-start;
+    background-repeat: repeat-x;
+    background-image:  -moz-linear-gradient(top, $color-start $start, $color-end $stop);
+    background-image: -webkit-linear-gradient(top, $color-start $start, $color-end $stop);
+    background-image: -ms-linear-gradient(top, $color-start $start, $color-end $stop);
+    background-image: -o-linear-gradient(top, $color-start $start, $color-end $stop);
+    background-image: linear-gradient(top, $color-start $start, $color-end $stop);
+}
+
+@mixin perspective($perspective) {
+    -webkit-perspective: $perspective;
+    -moz-perspective: $perspective;
+    -o-perspective: $perspective;
+    perspective: $perspective;
+}
+
+@mixin transition($transition) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}
+
+@mixin transform($transform) {
+    -webkit-transform: $transform;
+    -moz-transform: $transform;
+    -o-transform: $transform;
+    transform: $transform;
+}
+
+@mixin background-size($size) {
+    -webkit-background-size: $size;
+    -moz-background-size: $size;
+    -ms-background-size: $size;
+    -o-background-size: $size;
+    background-size: $size;
+}
+
+@mixin background-opacity($color, $opacity) {
+    background: $color;
+    background: rgba($color, $opacity);
+}
