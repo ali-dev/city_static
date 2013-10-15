@@ -45,20 +45,8 @@
     margin-top: 5px;
 }
 
-@media ($TABLET_PORTRAIT) {
-    .globalUtil-bd > a + a {
-        margin-top: 0;
-    }    
-}
-
 .globalUtil-ft {
     margin-top: 30px;
-}
-
-@media ($MOBILE) {
-    .globalUtil-ft {
-        display: none;
-    }
 }
 
 .globalHeader-nav {
@@ -79,17 +67,6 @@
     border-bottom: 1px solid $GREY_DARKER;
 }
 
-@media ($MOBILE) {
-    .globalNav-nav {
-        max-height: 0;
-        overflow: hidden;
-        @include transition(max-height .5s linear);
-    }
-    .globalNav-isOpen {
-        max-height: 1000px;
-    }
-}
-
 .globalNav-nav > * {
     font-size: 12px; 
     // font-size: 14px;
@@ -100,12 +77,6 @@
     text-align: center;
     padding: 13px 5px;
     border-right: 1px solid $GREY_DARKER;
-}
-
-@media ($TABLET) {
-    .globalNav-nav > * {
-        padding: 8px 18px;
-    }
 }
 
 .globalNav > * > *:first-child {
@@ -123,10 +94,6 @@
 .globalNav-nav > *:hover > a {
     color: $GOLD;
 }
-
-// .globalNav-nav > *:first-child {
-//     padding-left: 0;
-// }
 
 .globalNav-search {
     display: table;
@@ -233,14 +200,6 @@
     margin: 0 auto;
 }
 
-@media ($DESKTOP_PLUS) {
-    .globalTools,
-    .globalNav > *,
-    .globalHeader-util {
-        width: 1240px !important;
-    }    
-}
-
 .advSearchBox {
     max-height: 0;
     @include transition(max-height 0.3s linear);
@@ -248,12 +207,6 @@
 
 .advSearch-isOpen {
     max-height: 1000px;
-}
-
-@media ($TABLET_PORTRAIT) {
-    .advSearch-isOpen {
-        max-height: 150px;
-    }    
 }
 
 .advSearchTarget {
@@ -269,27 +222,8 @@
     margin-bottom: 6px;
 }
 
-@media ($TABLET_PORTRAIT) {
-    .advSearchTarget-fieldset {
-        padding: 15px 3px;
-    }
-}
-
 .advSearchTarget-fieldset > * {
     vertical-align: none;
-}
-
-@media ($TABLET_PORTRAIT) {
-    .advSearchTarget-fieldset > .input {
-        // width: 160px;
-        width: 20%;
-        margin-right: 10px;
-        padding: 5px;
-    }
-    .advSearchTarget-fieldset > .btn {
-        margin-top: 15px;
-        margin-left: 10px;
-    }
 }
 
 .sortBox {
@@ -303,12 +237,6 @@
     position: absolute;
     z-index: 1;
     background-color: $WHITE;
-}
-
-@media ($TABLET_PORTRAIT) {
-    .sortBox {
-        width: 320px;
-    }
 }
 
 .sortBox-label {
@@ -346,46 +274,38 @@
     color: $OFF_BLACK;
 }
 
-@media ($DESKTOP_PLUS) {
-    .globalNav > * > *:first-child {
-        width: 62%;
+@media ($TABLET_PORTRAIT) {
+    .globalUtil-bd > a + a {
+        margin-top: 0;
+    }    
+    .advSearch-isOpen {
+        max-height: 150px;
+    }    
+    .advSearchTarget-fieldset {
+        padding: 15px 3px;
     }
-    .globalSearch-input {
-        min-width: 55%;
-    }
-    .advSearchTrigger {
-        width: 30%;
-    }
-}
-
-@media (min-width: 1150px) {
-    .globalNav-nav > * {
-        font-size: 14px;
-    }
-    .globalSearch-label {
-        font-size: 14px;
-    }
-}
-
-@media ($DESKTOP) {
-    .globalSearch-input {
-        min-width: 44%;
+    .advSearchTarget-fieldset > .input {
+        // width: 160px;
+        width: 20%;
+        margin-right: 10px;
+        padding: 5px;
     }
     .advSearchTarget-fieldset > .btn {
-        margin-top: 0;
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+    .sortBox {
+        width: 320px;
+    }
+    .globalHeader-util {
+        max-width: $GLOBAL_WRAP_WIDTH;
+        padding: 0 $GLOBAL_PADDING;
     }
 }
 
-@media ("min-width: 1280px") {
-    .globalSearch-input {
-        min-width: 60%;
-    }
-}
-
-@media ("max-width: 1024px") {
-    .globalNav >.lTable > * {
-        width: 100%;
-        display: block;
+@media ($TABLET) {
+    .globalNav-nav > * {
+        padding: 8px 18px;
     }
 }
 
@@ -410,14 +330,66 @@
     }
 }
 
-@media ($TABLET_PORTRAIT) {
+@media ($DESKTOP) {
+    .globalSearch-input {
+        min-width: 44%;
+    }
+    .advSearchTarget-fieldset > .btn {
+        margin-top: 0;
+    }
+}
+
+@media ("max-width: 1024px") {
+    .globalNav >.lTable > * {
+        width: 100%;
+        display: block;
+    }
+}
+
+@media ("min-width: 1150px") {
+    .globalNav-nav > * {
+        font-size: 14px;
+    }
+    .globalSearch-label {
+        font-size: 14px;
+    }
+}
+
+@media ("min-width: 1280px") {
+    .globalSearch-input {
+        min-width: 60%;
+    }
+}
+
+@media ($DESKTOP_PLUS) {
+    .globalTools,
+    .globalNav > *,
     .globalHeader-util {
-        max-width: $GLOBAL_WRAP_WIDTH;
-        padding: 0 $GLOBAL_PADDING;
+        width: 1240px !important;
+    }
+    .globalNav > * > *:first-child {
+        width: 62%;
+    }
+    .globalSearch-input {
+        min-width: 55%;
+    }
+    .advSearchTrigger {
+        width: 30%;
     }
 }
 
 @media ($MOBILE) {
+    .globalUtil-ft {
+        display: none;
+    }
+    .globalNav-nav {
+        max-height: 0;
+        overflow: hidden;
+        @include transition(max-height .5s linear);
+    }
+    .globalNav-isOpen {
+        max-height: 1000px;
+    }
     .globalNav-nav,
     .globalNav-search {
         display: block;
