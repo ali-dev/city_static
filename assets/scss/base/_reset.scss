@@ -3,7 +3,7 @@
     Contributors: N/A
     Target Browsers: All Modern & IE9 +
     Media Type: Screen, Projection
-    Width: 1450, 1024, 800, 480
+    Width: 1280, 1024, 800, 580, 420
    --------------------------------- */
 
 /* ---------------------------------------------------------------------
@@ -22,7 +22,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, input {
     margin: 0;
     padding: 0;
     border: 0;
@@ -88,8 +88,12 @@ audio, canvas, video {
 input[type=search]::-webkit-search-cancel-button,
 input[type=search]::-webkit-search-decoration,
 input[type=search]::-webkit-search-results-button,
-input[type=search]::-webkit-search-results-decoration {
+input[type=search]::-webkit-search-results-decoration,
+input[type=submit],
+input {
     -webkit-appearance: none;
+    border: 0;
+    border-radius: 0;
 }
 
 input[type=search] {

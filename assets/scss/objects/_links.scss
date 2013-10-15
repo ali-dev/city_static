@@ -29,11 +29,14 @@
     padding: 10px;
     min-width: 80px;
     background-color: $RED;
+}
+
+.btn_shadow {
     @include box-shadow(4px 4px 0px $GREY_LIGHT);
     margin: 0 4px 0 -3px;
 }
 
-.btn:after {
+.btn_shadow:after {
     content: '';
     display: block;
     position: absolute;
@@ -44,7 +47,39 @@
     background-color: $GREY_LIGHT;
 }
 
-.btn:hover {
+.notouch .btn:hover,
+.btn:focus {
     color: $WHITE;
     background-color: $BRAND_ALT;
+}
+
+.btn_tight {
+    padding: 5px 10px;
+}
+
+.btn_mobileMenu {
+    display: none;
+}
+
+
+@media ($TABLET_PORTRAIT) {
+    .btn_mobileMenu {
+        position: static;
+    }
+}
+
+@media ($PHONE_LANDSCAPE) {
+    .btn_mobileMenu {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+@media ($MOBILE) {
+    .btn_mobileMenu {
+        display: inline-block;
+        min-width: 84px;
+        margin-top: 4px;
+    }
 }
