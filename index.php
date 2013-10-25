@@ -1,5 +1,368 @@
 <?php include("includes/head.php"); ?>
 <?php include("includes/header.php"); ?>
+        
+        <style type="text/css">
+            .testBlocks {
+                display: block;
+            }
+            .testBlocks > * {
+                float: left;
+                width: 23%;
+                margin: 1%;
+            }
+        </style>
+
+        <div class="wrapper">
+            <div class="section">
+                <div class="test">
+                    <div class="hdg hdg_3 mix-txt_thick mix-txt_brandAlt mix-txt_caps">Tile &amp; Category Color styles.</div>
+                </div>
+                <div class="grid grid_overflow">
+                    <div class="grid-col grid-col_8">
+                        <ul id="js-postTileContainer" class="staticBlocksForIsotope"><!--testBlocks blocks blocks_overflow blocks_4upTo1up -->
+                            <li class="js-postTileItem">
+                                <div class="postTile postTile_jobs">
+                                    <div class="postTile-type"><i class="ptTypeIcon"></i></div>
+                                    <div class="postTile-hd">
+                                        <img src="http://placehold.it/400x200" alt="" />
+                                        <div class="postTile-timestamp">12/24/2013</div>
+                                    </div>
+                                    <div class="postTile-bd">
+                                        <div class="postTile-hdg">Post Title</div>
+                                        <a class="postTile-subHdg" href="">Poster Name</a>
+                                        <p class="bdcpy bdcpy_md">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 250.
+                                        </p>
+                                        <div class="postTileTags">
+                                            <div class="postTileTags-label">Tags:</div>
+                                            <ul class="postTile-tags">
+                                                <li><a href="">Entertaiment</a></li>
+                                                <li><a href="">Music</a></li>
+                                                <li><a href="">Another One</a></li>
+                                                <li><a href="">One more</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="postTile-ft">
+                                        <ul class="postTileParade">
+                                            <li><a href=""><i class="ptIcon ptIcon_like"></i>Like</a></li>
+                                            <li><a href=""><i class="ptIcon ptIcon_share"></i>Share</a></li>
+                                            <li><a href=""><i class="ptIcon ptIcon_favorite"></i>Add Favorite</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="js-postTileItem">
+                                <div class="postTile postTile_arts">
+                                    <div class="postTile-type"><i class="ptTypeIcon"></i></div>
+                                    <div class="postTile-hd">
+                                        <!-- <img src="http://placehold.it/400x200" alt="" /> -->
+                                        <div class="postTile-timestamp">12/24/2013</div>
+                                    </div>
+                                    <div class="postTile-bd">
+                                        <div class="postTile-hdg">Post Title</div>
+                                        <a class="postTile-subHdg" href="">Poster Name</a>
+                                        <p class="bdcpy bdcpy_md">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since th. 150.
+                                        </p>
+                                        <div class="postTileTags">
+                                            <div class="postTileTags-label">Tags:</div>
+                                            <ul class="postTile-tags">
+                                                <li><a href="">Entertaiment</a></li>
+                                                <li><a href="">Music</a></li>
+                                                <li><a href="">Another One</a></li>
+                                                <li><a href="">One more</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="postTile-ft">
+                                        <ul class="postTileParade">
+                                            <li><a href=""><i class="ptIcon ptIcon_like"></i>Like</a></li>
+                                            <li><a href=""><i class="ptIcon ptIcon_share"></i>Share</a></li>
+                                            <li><a href=""><i class="ptIcon ptIcon_favorite"></i>Add Favorite</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="js-postTileItem">
+                                <div class="postTile postTile_events">
+                                    <div class="postTile-type"><i class="ptTypeIcon"></i></div>
+                                    <div class="postTile-hd">
+                                        <img src="http://placehold.it/400x200" alt="" />
+                                        <div class="postTile-timestamp">12/24/2013</div>
+                                    </div>
+                                    <div class="postTile-bd">
+                                        <div class="postTile-hdg">Post Title</div>
+                                        <a class="postTile-subHdg" href="">Poster Name</a>
+                                        <p class="bdcpy bdcpy_md">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 250.
+                                        </p>
+                                        <div class="postTileTags">
+                                            <div class="postTileTags-label">Tags:</div>
+                                            <ul class="postTile-tags">
+                                                <li><a href="">Entertaiment</a></li>
+                                                <li><a href="">Music</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="postTile-ft">
+                                        <ul class="postTileParade">
+                                            <li><a href=""><i class="ptIcon ptIcon_like"></i>Like</a></li>
+                                            <li><a href=""><i class="ptIcon ptIcon_share"></i>Share</a></li>
+                                            <li><a href=""><i class="ptIcon ptIcon_favorite"></i>Add Favorite</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="js-postTileItem">
+                                <div class="postTile postTile_restaurants">
+                                    <div class="postTile-type"><i class="ptTypeIcon"></i></div>
+                                    <div class="postTile-hd">
+                                        <img src="http://placehold.it/400x200" alt="" />
+                                        <div class="postTile-timestamp">12/24/2013</div>
+                                    </div>
+                                    <div class="postTile-bd">
+                                        <div class="postTile-hdg">Post Title</div>
+                                        <a class="postTile-subHdg" href="">Poster Name</a>
+                                        <p class="bdcpy bdcpy_md">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since th. 150.
+                                        </p>
+                                        <div class="postTileTags">
+                                            <div class="postTileTags-label">Tags:</div>
+                                            <ul class="postTile-tags">
+                                                <li><a href="">Entertaiment</a></li>
+                                                <li><a href="">Music</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="postTile-ft">
+                                        <ul class="postTileParade">
+                                            <li><a href=""><i class="ptIcon ptIcon_like"></i>Like</a></li>
+                                            <li><a href=""><i class="ptIcon ptIcon_share"></i>Share</a></li>
+                                            <li><a href=""><i class="ptIcon ptIcon_favorite"></i>Add Favorite</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="js-postTileItem">
+                                <div class="postTile postTile_jobs">
+                                    <div class="postTile-type"><i class="ptTypeIcon"></i></div>
+                                    <div class="postTile-hd">
+                                        <img src="http://placehold.it/400x200" alt="" />
+                                        <div class="postTile-timestamp">12/24/2013</div>
+                                    </div>
+                                    <div class="postTile-bd">
+                                        <div class="postTile-hdg">Post Title</div>
+                                        <a class="postTile-subHdg" href="">Poster Name</a>
+                                        <p class="bdcpy bdcpy_md">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 250.
+                                        </p>
+                                        <div class="postTileTags">
+                                            <div class="postTileTags-label">Tags:</div>
+                                            <ul class="postTile-tags">
+                                                <li><a href="">Entertaiment</a></li>
+                                                <li><a href="">Music</a></li>
+                                                <li><a href="">Another One</a></li>
+                                                <li><a href="">One more</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="postTile-ft">
+                                        <ul class="postTileParade">
+                                            <li><a href=""><i class="ptIcon ptIcon_like"></i>Like</a></li>
+                                            <li><a href=""><i class="ptIcon ptIcon_share"></i>Share</a></li>
+                                            <li><a href=""><i class="ptIcon ptIcon_favorite"></i>Add Favorite</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="js-postTileItem">
+                                <div class="postTile postTile_arts">
+                                    <div class="postTile-type"><i class="ptTypeIcon"></i></div>
+                                    <div class="postTile-hd">
+                                        <!-- <img src="http://placehold.it/400x200" alt="" /> -->
+                                        <div class="postTile-timestamp">12/24/2013</div>
+                                    </div>
+                                    <div class="postTile-bd">
+                                        <div class="postTile-hdg">Post Title</div>
+                                        <a class="postTile-subHdg" href="">Poster Name</a>
+                                        <p class="bdcpy bdcpy_md">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since th. 150.
+                                        </p>
+                                        <div class="postTileTags">
+                                            <div class="postTileTags-label">Tags:</div>
+                                            <ul class="postTile-tags">
+                                                <li><a href="">Entertaiment</a></li>
+                                                <li><a href="">Music</a></li>
+                                                <li><a href="">Another One</a></li>
+                                                <li><a href="">One more</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="postTile-ft">
+                                        <ul class="postTileParade">
+                                            <li><a href=""><i class="ptIcon ptIcon_like"></i>Like</a></li>
+                                            <li><a href=""><i class="ptIcon ptIcon_share"></i>Share</a></li>
+                                            <li><a href=""><i class="ptIcon ptIcon_favorite"></i>Add Favorite</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="js-postTileItem">
+                                <div class="postTile postTile_events">
+                                    <div class="postTile-type"><i class="ptTypeIcon"></i></div>
+                                    <div class="postTile-hd">
+                                        <img src="http://placehold.it/400x200" alt="" />
+                                        <div class="postTile-timestamp">12/24/2013</div>
+                                    </div>
+                                    <div class="postTile-bd">
+                                        <div class="postTile-hdg">Post Title</div>
+                                        <a class="postTile-subHdg" href="">Poster Name</a>
+                                        <p class="bdcpy bdcpy_md">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 250.
+                                        </p>
+                                        <div class="postTileTags">
+                                            <div class="postTileTags-label">Tags:</div>
+                                            <ul class="postTile-tags">
+                                                <li><a href="">Entertaiment</a></li>
+                                                <li><a href="">Music</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="postTile-ft">
+                                        <ul class="postTileParade">
+                                            <li><a href=""><i class="ptIcon ptIcon_like"></i>Like</a></li>
+                                            <li><a href=""><i class="ptIcon ptIcon_share"></i>Share</a></li>
+                                            <li><a href=""><i class="ptIcon ptIcon_favorite"></i>Add Favorite</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="js-postTileItem">
+                                <div class="postTile postTile_restaurants">
+                                    <div class="postTile-type"><i class="ptTypeIcon"></i></div>
+                                    <div class="postTile-hd">
+                                        <img src="http://placehold.it/400x200" alt="" />
+                                        <div class="postTile-timestamp">12/24/2013</div>
+                                    </div>
+                                    <div class="postTile-bd">
+                                        <div class="postTile-hdg">Post Title</div>
+                                        <a class="postTile-subHdg" href="">Poster Name</a>
+                                        <p class="bdcpy bdcpy_md">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since th. 150.
+                                        </p>
+                                        <div class="postTileTags">
+                                            <div class="postTileTags-label">Tags:</div>
+                                            <ul class="postTile-tags">
+                                                <li><a href="">Entertaiment</a></li>
+                                                <li><a href="">Music</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="postTile-ft">
+                                        <ul class="postTileParade">
+                                            <li><a href=""><i class="ptIcon ptIcon_like"></i>Like</a></li>
+                                            <li><a href=""><i class="ptIcon ptIcon_share"></i>Share</a></li>
+                                            <li><a href=""><i class="ptIcon ptIcon_favorite"></i>Add Favorite</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid-col grid-col_2 isHidden_mobilePhone">
+                        <div class="feedContainer">
+                            <div class="feedContainer-hd">
+                                Browse Members
+                            </div>
+                            <div class="feedContainer-bd">
+                                <ul class="vList feedContainer-listings">
+                                    <li>
+                                        <div class="media">
+                                            <div class="media-media">
+                                                <img class="imgThumb_sm" src="http://placehold.it/400x300" alt="" />
+                                            </div>
+                                            <div class="media-bd">
+                                                <a href="" class="hdg hdg_4 hdg_flush">Restaurant Name</a>
+                                                <p class="bdcpy bdcpy_sm">Lorem Ipsum is simply dummy text of the printing and typesetting . . . </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="media">
+                                            <div class="media-media">
+                                                <img class="imgThumb_sm" src="http://placehold.it/400x300" alt="" />
+                                            </div>
+                                            <div class="media-bd">
+                                                <a href="" class="hdg hdg_4 hdg_flush">Restaurant Name</a>
+                                                <p class="bdcpy bdcpy_sm">Lorem Ipsum is simply dummy text of the printing and typesetting . . . </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="media">
+                                            <div class="media-media">
+                                                <img class="imgThumb_sm" src="http://placehold.it/400x300" alt="" />
+                                            </div>
+                                            <div class="media-bd">
+                                                <a href="" class="hdg hdg_4 hdg_flush">Restaurant Name</a>
+                                                <p class="bdcpy bdcpy_sm">Lorem Ipsum is simply dummy text of the printing and typesetting . . . </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="feedContainer-ft">
+                                <a href="">View All Restaurants</a>
+                            </div>
+                        </div>
+                        <div class="feedContainer">
+                            <div class="feedContainer-hd">
+                                Sponsors
+                            </div>
+                            <div class="feedContainer-bd">
+                                <ul class="vList feedContainer-listings">
+                                    <li>
+                                        <div class="media">
+                                            <div class="media-media">
+                                                <img class="imgThumb_sm" src="http://placehold.it/400x300" alt="" />
+                                            </div>
+                                            <div class="media-bd">
+                                                <p class="bdcpy bdcpy_sm">Lorem Ipsum is simply dummy text of the printing and typesetting . . . </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="media">
+                                            <div class="media-media">
+                                                <img class="imgThumb_sm" src="http://placehold.it/400x300" alt="" />
+                                            </div>
+                                            <div class="media-bd">
+                                                <p class="bdcpy bdcpy_sm">Lorem Ipsum is simply dummy text of the printing and typesetting . . . </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="media">
+                                            <div class="media-media">
+                                                <img class="imgThumb_sm" src="http://placehold.it/400x300" alt="" />
+                                            </div>
+                                            <div class="media-bd">
+                                                <p class="bdcpy bdcpy_sm">Lorem Ipsum is simply dummy text of the printing and typesetting . . . </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- <div class="feedContainer-ft">
+                                <a href="">View All Restaurants</a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <div class="wrapper">
 

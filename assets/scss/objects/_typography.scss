@@ -23,6 +23,11 @@
     margin-top: 10px;
 }
 
+.hdg_flush + .bdcpy,
+.hdg_flush + .hdg {
+    margin-top: 0;
+}
+
 .hdg_1 {
     font-size: 36px;
     line-height: 1;
@@ -49,14 +54,13 @@
 }
 
 
-
 /* Body Copy Styles */
 
 .bdcpy {
     display: block;
     font-weight: $FONT_MED;
     color: $BLACK;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.02em;
 }
 
 .bdcpy_xlg {

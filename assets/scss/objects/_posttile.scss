@@ -1,0 +1,212 @@
+
+/* ---------------------------------------------------------------------
+ Post Tile Styles
+------------------------------------------------------------------------ */
+
+.postTile {
+    position: relative;
+    // overflow: hidden;
+    border: 2px solid $BLUE_DARK;
+    @include border-radius(3px);
+    // ISOTOPE needs a static container and tile widths to work. No Fluid Grid
+    // margin: 10px 0;
+}
+
+.postTile a {
+    color: $BLUE;
+}
+
+.notouch .postTile a:hover {
+    color: $BRAND_ALT;
+}
+
+.postTile-hd {
+    padding: 10px 10px 0 10px;
+}
+
+.postTile-bd {
+    padding: 5px 10px 20px 10px;
+}
+
+.postTile-bd .bdcpy {
+    margin-top: 10px;
+}
+
+.postTile-ft {
+    border-top: 1px solid $GREY;
+}
+
+.postTile-timestamp {
+    font-size: 10px;
+    color: $GREY_DARK;
+    text-align: right;
+}
+
+.postTile-hdg {
+    font-size: 14px;
+    font-weight: $FONT_EXTRABOLD;
+}
+
+.postTile-subHdg {
+    font-size: 12px;
+    font-weight: $FONT_BOLD;
+    color: $BLUE;
+}
+
+.postTileTags {
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.postTileTags-label {
+    float: left;
+    font-weight: $FONT_BOLD;
+    margin-right: 3px;
+}
+
+.postTile-tags {
+    overflow: hidden;
+    font-weight: $FONT_BOLD;
+    line-height: 1.4;
+}
+
+.postTile-tags > * {
+    float: left;
+}
+
+.postTile-tags > *:after {
+    display: inline;
+    content: '•';
+    color: $BLACK;
+    padding: 0 4px;
+}
+
+.postTile-tags > *:last-child:after {
+    content: none;
+}
+
+.postTileParade {
+    display: table;
+    width: 100%;
+}
+
+.postTileParade > * {
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: $FONT_BOLD;
+    padding: 10px 5px;
+    text-align: center;
+}
+
+.postTileParade > * + * {
+    font-size: 11px;
+    border-left: 1px solid $GREY;
+}
+
+.postTileParade a:hover * {
+    color: inherit;
+}
+
+.ptIcon {
+    @extend .icon;
+    position: relative;
+    bottom: -1px;
+    display: inline;
+    padding-right: 3px;
+    font-size: 15px;
+    color: $GREY;
+}
+
+.ptIcon:hover {
+    color: inherit;
+}
+
+.ptIcon_like:before {
+    @extend .icon-star:before;
+}
+
+.ptIcon_share:before {
+    @extend .icon-envelope-alt:before;
+}
+
+.ptIcon_favorite:before {
+    @extend .icon-plus-sign:before;
+}
+
+.postTile-type {
+    height: 27px;
+    width: 27px;
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    background-color: $BLUE_DARK;
+}
+
+/*
+jobs === $GOLD
+events === $GREEN
+arts === $TEAL
+restaurants === $BLUE
+businesses === $RED_ORANGE
+organizations === $RED
+*/
+
+.postTile_jobs { border-color: $GOLD; }
+.postTile_jobs > .postTile-type { background-color: $GOLD; }
+.postTile_jobs > * .ptTypeIcon:before { @extend .icon-key:before; }
+
+.postTile_events { border-color: $BLUE; }
+.postTile_events > .postTile-type { background-color: $BLUE; }
+.postTile_events > * .ptTypeIcon:before { @extend .icon-calendar:before; }
+
+.postTile_arts { border-color: $TEAL; }
+.postTile_arts > .postTile-type { background-color: $TEAL; }
+.postTile_arts > * .ptTypeIcon:before { @extend .icon-globe:before; }
+
+.postTile_restaurants { border-color: $GREEN; }
+.postTile_restaurants > .postTile-type { background-color: $GREEN; }
+.postTile_restaurants > * .ptTypeIcon:before { @extend .icon-glass:before; }
+
+.postTile_businesses { border-color: $RED_ORANGE; }
+.postTile_businesses > .postTile-type { background-color: $RED_ORANGE; }
+.postTile_businesses > * .ptTypeIcon:before { @extend .icon-tags:before; }
+
+.postTile_organizations { border-color: $RED; }
+.postTile_organizations > .postTile-type { background-color: $RED; }
+.postTile_organizations > * .ptTypeIcon:before { @extend .icon-group:before; }
+
+.postTile-type:before {
+    content: '';
+    bottom: -5px;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 0 solid transparent;
+    border-top: 5px solid $GREY_DARKER;
+}
+
+.postTile-type:after {
+    content: '';
+    top: 0;
+    right: -5px;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 0 solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid $GREY_DARKER;
+}
+
+.ptTypeIcon {
+    @extend .icon;
+    font-size: 20px;
+    padding: 5px;
+    color: $WHITE;
+    opacity: 0.75;
+}
+
+.mix-postTile_art > .ptTypeIcon:before {
+    @extend .icon-plus-sign:before;
+}

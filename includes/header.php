@@ -53,10 +53,10 @@
                 <div class="advSearchBox js-advSearchTarget">
                     <form class="advSearchTarget">
                         <div class="advSearchTarget-fieldset">
-                            <input class="input" type="input" placeholder="one" />
-                            <input class="input" type="input" placeholder="one" />
-                            <input class="input" type="input" placeholder="one" />
-                            <input class="input" type="input" placeholder="one" />
+                            <input class="input" type="text" placeholder="one" />
+                            <input class="input" type="text" placeholder="one" />
+                            <input class="input" type="text" placeholder="one" />
+                            <input class="input" type="text" placeholder="one" />
                             <input class="btn btn_tight" type="submit" value="Search" />
                         </div>
                     </form>

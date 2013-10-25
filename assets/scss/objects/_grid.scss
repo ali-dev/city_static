@@ -17,6 +17,10 @@
     clear: both;
 }
 
+.grid_overflow {
+    overflow: visible;
+}
+
 .grid_overflow:after { 
     content: "."; 
     visibility: hidden; 

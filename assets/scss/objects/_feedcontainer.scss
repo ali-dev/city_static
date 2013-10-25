@@ -1,0 +1,45 @@
+
+/* ---------------------------------------------------------------------
+ News and Sponser Feed Styles.
+------------------------------------------------------------------------ */
+
+.feedContainer:first-of-type {
+	margin-top: 10px;
+}
+
+.feedContainer + .feedContainer {
+	margin-top: 20px;
+}
+
+.feedContainer-hd {
+	padding: 10px;
+	border: 1px solid $GREY;
+	background-color: $BLUE_DARK;
+	text-align: center;
+	font-size: 14px;
+	font-weight: $FONT_EXTRABOLD;
+	text-transform: uppercase;
+	color: $BRAND;
+}
+
+.feedContainer-bd {
+	border: 1px solid $GREY;
+	border-top: none;
+}
+
+.feedContainer-ft {
+	padding: 10px;
+	text-align: right;
+	border: 1px solid $GREY;
+	border-top: none;
+	font-weight: $FONT_BOLD;
+}
+
+.feedContainer-listings > * {
+	padding: 10px;
+	border-top: 1px solid $GREY;
+}
+
+.feedContainer-listings > *:first-child {
+	border-top: none;
+}
