@@ -39,6 +39,7 @@
 
         <!-- 3rd Party JS -->
         <script type="text/javascript" src="assets/scripts/respond.min.js"></script>
-        <!-- // <script type="text/javascript" src="assets/scripts/jquery.isotope.min.js"></script> -->
+        <script type="text/javascript" src="assets/scripts/jquery.isotope.min.js"></script>
+
     </head>
     <body>

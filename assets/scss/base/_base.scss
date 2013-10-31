@@ -42,7 +42,7 @@ a[href="#"] {
     /* @include user-select(none); */
 }
 
-a:hover {
+.notouch a:hover {
     color: $RED;
     cursor: pointer;
 }

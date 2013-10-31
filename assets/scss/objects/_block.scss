@@ -3,56 +3,6 @@
  Blocks Layout Styles
 ------------------------------------------------------------------------ */
 
-.staticBlocksForIsotope {
-    overflow: hidden;
-}
-
-.staticBlocksForIsotope > * {
-    // width: 290px;
-    width: 94%;
-    float: left;
-    @include transition(all 0.3s);
-    background-color: $WHITE;
-}
-
-@media ($PHONE_LANDSCAPE) {
-    .staticBlocksForIsotope > * {
-        width: 47%;
-        // width: 350px;
-    }
-}
-
-@media ($TABLET_PORTRAIT) {
-    .staticBlocksForIsotope > * {
-        width: 45%;
-        // width: 200px;
-    }
-}
-
-@media ($TABLET) {
-    .staticBlocksForIsotope > * {
-        width: 31%;
-        // width: 225px;
-    }
-}
-
-@media ($DESKTOP) {
-    .staticBlocksForIsotope > * {
-        // width: 30%;
-        width: 240px;
-    }
-}
-
-@media ($DESKTOP_PLUS) {
-    .staticBlocksForIsotope > * {
-        width: 230px;
-    }
-}
-
-.staticBlocksForIsotope > * {
-    margin: 10px 8px 10px 8px;
-}
-
 .blocks {
     list-style: none;
     overflow: hidden;

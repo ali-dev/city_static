@@ -1,0 +1,68 @@
+/* ---------------------------------------------------------------------
+ Isoptope Layout Styles
+------------------------------------------------------------------------ */
+
+.wrapForIsotope {
+    overflow: hidden;
+}
+
+.mainForIsotope {
+    width: 100%;
+}
+
+.sidebarForIsotope {
+    display: none;
+}
+
+@media (min-width: 680px) {
+
+    .wrapForIsotope {
+        padding-left: 240px;
+    }
+
+    .mainForIsotope {
+        margin: 0 auto 0 -240px;
+        float:left;
+    }
+
+    .sidebarForIsotope {
+        display: block;
+        width: 230px;
+        float: right;
+    }
+}
+
+.staticBlocksForIsotope {
+    overflow: hidden;
+    width: 100%;
+}
+
+.staticBlocksForIsotope > * {
+    margin: 10px 8px 10px 8px;
+}
+
+.staticBlocksForIsotope > * {
+    width: 98%;
+    float: none;
+    @include transition(all 0.1s);
+    background-color: $WHITE;
+}
+
+@media ($PHONE_LANDSCAPE) {
+    .staticBlocksForIsotope > * {
+        width: 45%;
+        float: left;
+    }
+}
+
+@media ($TABLET) {
+    .staticBlocksForIsotope > * {
+        width: 30%;
+    }
+}
+
+@media (min-width: 1110px) {
+    .staticBlocksForIsotope > * {
+        width: 23%;
+    }    
+}

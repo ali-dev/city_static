@@ -17,8 +17,8 @@
                 <div class="test">
                     <div class="hdg hdg_3 mix-txt_thick mix-txt_brandAlt mix-txt_caps">Tile &amp; Category Color styles.</div>
                 </div>
-                <div class="grid grid_overflow">
-                    <div class="grid-col grid-col_8">
+                <div class="wrapForIsotope">
+                    <div class="mainForIsotope"> <!-- grid-col_8 -->
                         <ul id="js-postTileContainer" class="staticBlocksForIsotope"><!--testBlocks blocks blocks_overflow blocks_4upTo1up -->
                             <li class="js-postTileItem">
                                 <div class="postTile postTile_jobs">
@@ -270,7 +270,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid-col grid-col_2 isHidden_mobilePhone">
+                    <div class="sidebarForIsotope isHidden_mobilePhone">
                         <div class="feedContainer">
                             <div class="feedContainer-hd">
                                 Browse Members
@@ -362,7 +362,6 @@
                 </div>
             </div>
         </div>
-
 
         <div class="wrapper">
 

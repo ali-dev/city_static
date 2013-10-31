@@ -103,7 +103,7 @@
     border-left: 1px solid $GREY;
 }
 
-.postTileParade a:hover * {
+.notouch .postTileParade a:hover * {
     color: inherit;
 }
 
@@ -117,7 +117,7 @@
     color: $GREY;
 }
 
-.ptIcon:hover {
+.notouch .ptIcon:hover {
     color: inherit;
 }
 

@@ -2,13 +2,14 @@
 Global JavaScript
 Authors: Patrick Jannette
 ------------------------------------------------------------------------ */// Namespace Object
-var PHDL = PHDL || {};
+var CITY = CITY || {};
 
 (function(e, t) {
     e(function() {
         t.MobileNavToggle.init();
         t.AdvancedSearchToggle.init();
         t.BrowserDeviceDetection.init();
+        t.IsoptopeInitializer.init();
     });
     t.MobileNavToggle = {
         $navContainer: undefined,
@@ -44,7 +45,7 @@ var PHDL = PHDL || {};
         },
         bind: function() {
             var e = this;
-            this.$advSearchBtn.on("click", function(t) {
+            this.$advSearchBtn.on("touchstart click", function(t) {
                 t.preventDefault();
                 e.toggleAdvSearch();
             });
@@ -108,4 +109,42 @@ var PHDL = PHDL || {};
             t.Features.isIPad = !1;
         }
     };
-})(jQuery, PHDL);
+    t.IsoptopeInitializer = {
+        $isotopContainer: undefined,
+        init: function() {
+            var t = e(".wrapForIsotope");
+            if (!t.length) return;
+            this.$isotopContainer = t;
+            this.bind();
+        },
+        bind: function() {
+            e(function() {
+                var t = e("#js-postTileContainer"), n = e(window);
+                t.isotope({
+                    itemSelector: ".js-postTileItem",
+                    layoutMode: "masonry"
+                });
+                e(window).smartresize(function() {
+                    var e = n.width();
+                    e > 1110 ? t.isotope({
+                        masonry: {
+                            columnWidth: t.width() / 4
+                        }
+                    }) : e < 1110 && e > 800 ? t.isotope({
+                        masonry: {
+                            columnWidth: t.width() / 3
+                        }
+                    }) : e < 800 && e > 580 ? t.isotope({
+                        masonry: {
+                            columnWidth: t.width() / 2
+                        }
+                    }) : e < 580 && e > 420 && t.isotope({
+                        masonry: {
+                            columnWidth: t.width() / 2
+                        }
+                    });
+                });
+            });
+        }
+    };
+})(jQuery, CITY);

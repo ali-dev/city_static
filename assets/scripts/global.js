@@ -4,7 +4,7 @@ Authors: Patrick Jannette
 ------------------------------------------------------------------------ */
 
 // Namespace Object
-var PHDL = PHDL || {};
+var CITY = CITY || {};
 
 // Pass reference to jQuery and Namespace
 (function($, APP) {
@@ -14,6 +14,7 @@ var PHDL = PHDL || {};
         APP.MobileNavToggle.init();
         APP.AdvancedSearchToggle.init();
         APP.BrowserDeviceDetection.init();
+        APP.IsoptopeInitializer.init();
     });
 
 /* -------------------------------------------------------------------- 
@@ -72,8 +73,9 @@ APP.AdvancedSearchToggle = {
     
     bind: function() {
         var self = this;
-        this.$advSearchBtn.on('click', function(e) {
+        this.$advSearchBtn.on('touchstart click', function(e) {
             e.preventDefault();
+            // e.stopPropigation();
             self.toggleAdvSearch();
         });
     },
@@ -179,4 +181,75 @@ APP.BrowserDeviceDetection = {
 
 };
 
-}(jQuery, PHDL));
+/* -------------------------------------------------------------------- 
+IsoptopeInitializer
+Initializes and adds window resize listener and breakpoint settings
+-------------------------------------------------------------------- */
+
+APP.IsoptopeInitializer = {
+    $isotopContainer: undefined,
+    
+    init: function() {
+        var $isotopContainer = $('.wrapForIsotope');
+        if (!$isotopContainer.length) {
+            return;
+        }
+        this.$isotopContainer = $isotopContainer;
+        this.bind();
+    },
+    
+    bind: function() {
+
+$(function(){
+
+          var $container = $('#js-postTileContainer');
+          var $window = $(window);
+
+          $container.isotope({
+            itemSelector : '.js-postTileItem',
+            layoutMode : 'masonry'
+          });
+
+          $(window).smartresize(function(){
+
+            var windowSize = $window.width();
+
+
+            if (windowSize > 1110) {
+
+              $container.isotope({
+                  // update columnWidth to a percentage of container width
+                  masonry: { columnWidth: $container.width() / 4 }
+                });
+
+            } else if (windowSize < 1110 && windowSize > 800) {
+
+              $container.isotope({
+                  // update columnWidth to a percentage of container width
+                  masonry: { columnWidth: $container.width() / 3 }
+                });
+              
+            } else if (windowSize < 800 && windowSize > 580) {
+
+              $container.isotope({
+                  // update columnWidth to a percentage of container width
+                  masonry: { columnWidth: $container.width() / 2 }
+                });
+              
+            } else if (windowSize < 580 && windowSize > 420) {
+
+              $container.isotope({
+                  // update columnWidth to a percentage of container width
+                  masonry: { columnWidth: $container.width() / 2 }
+                });
+              
+            }
+      });
+
+    });
+
+    }
+};
+
+
+}(jQuery, CITY));

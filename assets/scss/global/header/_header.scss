@@ -87,11 +87,11 @@
     color: $WHITE;
 }
 
-.globalNav-nav > *:hover {
+.notouch .globalNav-nav > *:hover {
     cursor: pointer;
 }
 
-.globalNav-nav > *:hover > a {
+.notouch .globalNav-nav > *:hover > a {
     color: $GOLD;
 }
 
@@ -178,7 +178,7 @@
     border-top: none;
 }
 
-.advSearchTrigger:hover {
+.notouch .advSearchTrigger:hover {
     cursor: pointer;
     background-color: $BLACK;
 }
@@ -262,7 +262,7 @@
     color: $GREY_DARKER;
 }
 
-.sortBox-list > * > a:hover,
+.notouch .sortBox-list > * > a:hover,
 .sortBox-list > *.isActive > a,
 .sortBox-list > * > a:active {
     color: $TEAL;
