@@ -242,9 +242,8 @@ $(function(){
                   // update columnWidth to a percentage of container width
                   masonry: { columnWidth: $container.width() / 2 }
                 });
-              
             }
-      });
+        });
 
     });
 

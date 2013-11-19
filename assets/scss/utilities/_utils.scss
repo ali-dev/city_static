@@ -24,3 +24,16 @@
     width: 100%;
     height: auto;
 }
+
+@media ($TABLET_PORTRAIT_MAX) {
+    .stackInTablet > * {
+        display: block !important;
+        float: none !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        margin-bottom: 10px;
+    }
+    .stackInTablet > * img {
+        max-width: 100%;
+    }
+}

@@ -8,6 +8,14 @@
     display: block;
 }
 
+.vList > * + * {
+    margin-top: 10px;
+}
+
 .vList_brd > * {
     border-top: 1px solid $GREY;
+}
+
+.vList_spread > * + * {
+    margin-top: 20px;
 }

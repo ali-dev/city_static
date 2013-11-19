@@ -1,0 +1,63 @@
+
+/* ---------------------------------------------------------------------
+ Post Detail Box Styles
+------------------------------------------------------------------------ */
+
+.postDetailBox {
+    padding: 25px 20px;
+    background-color: $WHITE;
+    @include border-radius(2px);
+    border: 1px solid $GREY_LIGHT;
+}
+
+.postDetailBox-hd {
+    margin-bottom: 10px;
+}
+
+.postDetailBox-hd_brd {
+    padding-bottom: 10px;
+    border-bottom: 1px solid $GREY_LIGHT;
+}
+
+.postDetailBox_img {
+    // max-width: 460px;
+    width: 100%;
+    height: auto;
+    border: 3px solid $BLUE_DARK;
+    @include box-sizing(border-box);
+}
+
+.postLabel + .postValue,
+.postLabel + .bdcpy {
+    margin-top: 5px;
+}
+
+.postLabel {
+    font-size: 14px;
+}
+
+.postValue {
+    font-weight: $FONT_BOLD;
+    font-size: 12px;
+}
+
+.postValue > a + a {
+    white-space: nowrap;
+}
+
+.postDetailBox_parade > * {
+    float: right;
+    margin-left: 10px;
+    background-color: $OFFWHITE_BLUE;
+    border: 1px solid $GREY_LIGHT;
+}
+
+.postDetailBox_parade > * > a {
+    display: block;
+    padding: 7px 10px 5px;
+}
+
+.postDetailBox_parade > * > a:hover {
+    color: $WHITE;
+    background-color: $BLUE_DARK;
+}

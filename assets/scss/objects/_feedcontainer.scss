@@ -1,49 +1,82 @@
 
 /* ---------------------------------------------------------------------
- News and Sponser Feed Styles.
+ News and Sponsor Feed Styles.
 ------------------------------------------------------------------------ */
 
 .feedContainer:first-of-type {
-	margin-top: 10px;
+    margin-top: 10px;
 }
 
 .feedContainer + .feedContainer {
-	margin-top: 20px;
+    margin-top: 20px;
 }
 
 .feedContainer {
-	background-color: $WHITE;
+    background-color: $WHITE;
 }
 
 .feedContainer-hd {
-	padding: 10px;
-	border: 1px solid $GREY;
-	background-color: $BLUE_DARK;
-	text-align: center;
-	font-size: 14px;
-	font-weight: $FONT_EXTRABOLD;
-	text-transform: uppercase;
-	color: $BRAND;
+    padding: 10px;
+    border: 1px solid $GREY;
+    background-color: $BLUE_DARK;
+    text-align: center;
+    font-size: 14px;
+    font-weight: $FONT_EXTRABOLD;
+    text-transform: uppercase;
+    color: $BRAND;
 }
 
 .feedContainer-bd {
-	border: 1px solid $GREY;
-	border-top: none;
+    border: 1px solid $GREY;
+    border-top: none;
 }
 
 .feedContainer-ft {
-	padding: 10px;
-	text-align: right;
-	border: 1px solid $GREY;
-	border-top: none;
-	font-weight: $FONT_BOLD;
+    padding: 10px;
+    text-align: right;
+    border: 1px solid $GREY;
+    border-top: none;
+    font-weight: $FONT_BOLD;
 }
 
 .feedContainer-listings > * {
-	padding: 10px;
-	border-top: 1px solid $GREY;
+    padding: 10px;
+    border-top: 1px solid $GREY;
 }
 
 .feedContainer-listings > *:first-child {
-	border-top: none;
+    border-top: none;
+}
+
+.feedContainer-form {
+    padding: 2%;
+    font-weight: $FONT_EXTRABOLD;
+}
+
+.feedContainer-label {
+    padding-left: 4%;
+    width: 30%;
+}
+
+.feedContainer-select {
+    font-weight: $FONT_EXTRABOLD;
+    width: 96%;
+    margin: 2%;
+    padding: 5px;
+    font-size: 12px;
+    line-height: 1;
+    -webkit-appearance: none;
+    border: 1px solid $GREY;
+    background: url(../images/svgs/select-box-arrow.svg) no-repeat 97% $WHITE;
+}
+
+.feedContainer-select:hover {
+    cursor: pointer;
+    background-color: $OFFWHITE_BLUE;
+}
+
+.feedContainer-sortBox {
+    font-size: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed $GREY;
 }

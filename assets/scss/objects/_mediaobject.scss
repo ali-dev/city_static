@@ -31,5 +31,19 @@
         margin-bottom: 0;
     }
 
+    .media_flip > .media-media {
+        float: right;
+        margin-right: 0;
+        margin-left: 10px;
+    }
+
+    .media_equalWidth > * {
+        width: 48%;
+    }
+
+    .media_equalWidth > * + * {
+        margin-left: 2%;
+    }
+
 }
 

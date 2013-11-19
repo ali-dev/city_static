@@ -15,6 +15,239 @@
         <div class="wrapper">
             <div class="section">
                 <div class="test">
+                    <div class="hdg hdg_3 mix-txt_thick mix-txt_brandAlt mix-txt_caps">Post Tile Large with Share Options</div>
+                </div>
+                <div class="grid">
+                    <div class="grid-col grid-col_8">
+                        <div class="postDetailBox"><!-- postDetailBox -->
+                            <div class="postDetailBox-hd postDetailBox-hd_brd">
+                                <div class="lTable stackInTablet">
+                                    <div class="hdg hdg_1">An Organization / Business Name</div>
+                                    <ul class="postDetailBox_parade">
+                                        <li><a href=""><i class="ptIcon ptIcon_like"></i>Like</a></li>
+                                        <li><a href=""><i class="ptIcon ptIcon_share"></i>Share</a></li>
+                                        <li><a href=""><i class="ptIcon ptIcon_favorite"></i>Add Favorite</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="postDetailBox-bd">
+                                <div class="vList vList_spread">
+                                    <div>
+                                        <div class="media">
+                                            <div class="media-media">
+                                                <img class="imgThumb_md" src="http://placehold.it/400x400">
+                                            </div>
+                                            <div class="media-bd">
+                                                <ul class="vList">
+                                                    <li>
+                                                        <div class="postLabel">Posted By:</div>
+                                                        <div class="postValue">
+                                                            <a href="">John Doe</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="postLabel">Location:</div>
+                                                        <div class="postValue">
+                                                            <a href="">
+                                                                Ramallah Rukab Street no. 32
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="postLabel">Location:</div>
+                                                        <div class="postValue">
+                                                            <a href="">
+                                                                Ramallah Rukab Street no. 32
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <ul class="vList vList_spread">
+                                            <li>
+                                                <div class="postLabel">Details</div>
+                                                <p class="bdcpy bdcpy_lg">
+                                                   Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.Separated they live in Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.Separated they live in Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in.
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-col grid-col_2">
+                        <div class="feedContainer">
+                            <div class="feedContainer-hd">
+                                Feed Container
+                            </div>
+                            <div class="feedContainer-bd">
+                                <ul class="vList feedContainer-listings">
+                                    <li>
+                                        <div class="media stackInTablet">
+                                            <div class="media-media">
+                                                <img class="imgThumb_sm" src="http://placehold.it/400x300" alt="">
+                                            </div>
+                                            <div class="media-bd">
+                                                <p class="bdcpy bdcpy_sm">Lorem Ipsum is simply dummy text of the printing and typesetting . . . </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="media stackInTablet">
+                                            <div class="media-media">
+                                                <img class="imgThumb_sm" src="http://placehold.it/400x300" alt="">
+                                            </div>
+                                            <div class="media-bd">
+                                                <p class="bdcpy bdcpy_sm">Lorem Ipsum is simply dummy text of the printing and typesetting . . . </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="media stackInTablet">
+                                            <div class="media-media">
+                                                <img class="imgThumb_sm" src="http://placehold.it/400x300" alt="">
+                                            </div>
+                                            <div class="media-bd">
+                                                <p class="bdcpy bdcpy_sm">Lorem Ipsum is simply dummy text of the printing and typesetting . . . </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+
+        <div class="wrapper">
+            <div class="section">
+                <div class="test">
+                    <div class="hdg hdg_3 mix-txt_thick mix-txt_brandAlt mix-txt_caps">Post Tile Large</div>
+                </div>
+                <div class="grid">
+                    <div class="grid-col grid-col_8">
+                        <div class="postDetailBox"><!-- postDetailBox -->
+                            <div class="media media_flip media_equalWidth">
+                                <div class="media-media">
+                                    <img class="postDetailBox_img" src="http://placehold.it/800x600" alt="">
+                                </div>
+                                <div class="media-bd">
+                                    <div class="postDetailBox-hd">
+                                        <div class="hdg hdg_2">An Event Title</div>
+                                    </div>
+                                    <div class="postDetailBox-bd">
+                                        <ul class="vList vList_spread">
+                                            <li>
+                                                <div class="blocks blocks_2up">
+                                                    <div>
+                                                        <div class="postLabel">Posted By:</div>
+                                                        <div class="postValue">
+                                                            <a href="">John Doe</a>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="postLabel">Date Added:</div>
+                                                        <div class="postValue">November 24th, 2012</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="blocks blocks_2up">
+                                                    <div>
+                                                        <div class="postLabel">Location:</div>
+                                                        <div class="postValue">
+                                                            <a href="">
+                                                                Ramallah, <br />
+                                                                Rukab Street no. 32
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="postLabel">Tags:</div>
+                                                        <div class="postValue"><a href="">Entertainment,</a> <a href="">Music,</a> <a href="">Another One,</a> <a href="">One more</a></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="postLabel">Details</div>
+                                                <p class="bdcpy bdcpy_lg">
+                                                   Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in.
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-col grid-col_2">
+                        <div class="feedContainer">
+                            <div class="feedContainer-hd">
+                                Feed Container
+                            </div>
+                            <div class="feedContainer-bd">
+                                <ul class="vList feedContainer-listings">
+                                    <li>
+                                        <div class="media stackInTablet">
+                                            <div class="media-media">
+                                                <img class="imgThumb_sm" src="http://placehold.it/400x300" alt="">
+                                            </div>
+                                            <div class="media-bd">
+                                                <p class="bdcpy bdcpy_sm">Lorem Ipsum is simply dummy text of the printing and typesetting . . . </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="media stackInTablet">
+                                            <div class="media-media">
+                                                <img class="imgThumb_sm" src="http://placehold.it/400x300" alt="">
+                                            </div>
+                                            <div class="media-bd">
+                                                <p class="bdcpy bdcpy_sm">Lorem Ipsum is simply dummy text of the printing and typesetting . . . </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="media stackInTablet">
+                                            <div class="media-media">
+                                                <img class="imgThumb_sm" src="http://placehold.it/400x300" alt="">
+                                            </div>
+                                            <div class="media-bd">
+                                                <p class="bdcpy bdcpy_sm">Lorem Ipsum is simply dummy text of the printing and typesetting . . . </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapperFull">
+            <div class="wrapper">
+                <div class="section">
+                    <div class="test">
+                        <div class="hdg hdg_3 mix-txt_thick mix-txt_brandAlt mix-txt_caps">Lazy Loader Bar</div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapperFull">
+                <div class="lazyLoader">Load More Posts</div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="section">
+                <div class="test">
                     <div class="hdg hdg_3 mix-txt_thick mix-txt_brandAlt mix-txt_caps">Tile &amp; Category Color styles.</div>
                 </div>
                 <div class="wrapForIsotope">
@@ -276,6 +509,21 @@
                                 Browse Members
                             </div>
                             <div class="feedContainer-bd">
+                                <form class="feedContainer-form">
+                                    <!-- <label class="feedContainer-label">Lookup</label> -->
+                                    <select class="feedContainer-select">
+                                        <option>Choose a Category</option>
+                                        <option>Restaurants</option>
+                                        <option>Restaurants</option>
+                                        <option>Restaurants</option>
+                                    </select>
+                                </form>
+                                <div class="feedContainer-sortBox">
+                                    <ul class="sortBox-list">
+                                        <li class="isActive"><a href="">Most Recent</a></li>
+                                        <li><a href="">Most Liked</a></li>
+                                    </ul>
+                                </div>
                                 <ul class="vList feedContainer-listings">
                                     <li>
                                         <div class="media">
@@ -283,7 +531,7 @@
                                                 <img class="imgThumb_sm" src="http://placehold.it/400x300" alt="" />
                                             </div>
                                             <div class="media-bd">
-                                                <a href="" class="hdg hdg_4 hdg_flush">Restaurant Name</a>
+                                                <a href="" class="hdg hdg_5 hdg_flush">Restaurant Name</a>
                                                 <p class="bdcpy bdcpy_sm">Lorem Ipsum is simply dummy text of the printing and typesetting . . . </p>
                                             </div>
                                         </div>
@@ -294,7 +542,7 @@
                                                 <img class="imgThumb_sm" src="http://placehold.it/400x300" alt="" />
                                             </div>
                                             <div class="media-bd">
-                                                <a href="" class="hdg hdg_4 hdg_flush">Restaurant Name</a>
+                                                <a href="" class="hdg hdg_5 hdg_flush">Restaurant Name</a>
                                                 <p class="bdcpy bdcpy_sm">Lorem Ipsum is simply dummy text of the printing and typesetting . . . </p>
                                             </div>
                                         </div>
@@ -305,7 +553,7 @@
                                                 <img class="imgThumb_sm" src="http://placehold.it/400x300" alt="" />
                                             </div>
                                             <div class="media-bd">
-                                                <a href="" class="hdg hdg_4 hdg_flush">Restaurant Name</a>
+                                                <a href="" class="hdg hdg_5 hdg_flush">Restaurant Name</a>
                                                 <p class="bdcpy bdcpy_sm">Lorem Ipsum is simply dummy text of the printing and typesetting . . . </p>
                                             </div>
                                         </div>

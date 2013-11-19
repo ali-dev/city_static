@@ -14,8 +14,12 @@
     max-width: 1280px;
 }
 
-.wrapper_full {
+.wrapperFull {
     max-width: 100%;
+}
+
+.wrapperFull_dark {
+	background-color: $BLUE_DARK;
 }
 
 @media ($TABLET_PORTRAIT) {
